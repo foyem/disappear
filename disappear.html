@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Disappearing Circle</title>
+    <style>
+        #red {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            margin: 20px;
+        }
+        
+        #green {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 20px;
+        }
+        
+        #blue {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blue;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="red"> </div>
+
+    <p></p>
+
+    <div id="green"></div>
+
+    <p></p>
+
+    <div id="blue"></div>
+
+    <script type="text/javascript">
+        document.getElementById("red").onclick = function() {
+            document.getElementById("red").style.display = "none";
+        }
+
+        document.getElementById("green").onclick = function() {
+            document.getElementById("green").style.display = "none";
+        }
+
+        document.getElementById("blue").onclick = function() {
+            document.getElementById("blue").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
