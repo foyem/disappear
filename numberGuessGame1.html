@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guess Game</title>
+</head>
+
+<body>
+
+    <p>
+        <h1>This is a number guess Game</h1>
+    </p>
+
+    <p>How many finger I'm I holding up</p>
+
+    <input type="text" id="guessNumber" placeholder=" Enter your number"><button id="checkNumber">Guess</button>
+
+    <script type="text/javascript">
+        document.getElementById("checkNumber").onclick = function() {
+            var randomNumber = Math.random();
+            randomNumber = randomNumber * 6;
+            randomNumber = Math.floor(randomNumber);
+            randomNumberEntered = document.getElementById("guessNumber").value;
+
+            if (randomNumber == randomNumberEntered) {
+                alert('Yes, you got it right, the number was ' + randomNumber)
+            } else {
+                alert('No, you got it wrong! The number was ' + randomNumber)
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
